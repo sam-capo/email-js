@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eef4ff, #f5f7fb);
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+}
+
+h1 {
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    color: #111827;
+}
+
+#contact {
+    width: min(420px, 90vw);
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.4rem 0 1rem;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #111827;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+#contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#contact .btn:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+#contact .btn:active {
+    transform: translateY(0);
+}
